@@ -181,7 +181,8 @@ module.exports = {
         // j5board:require("johnny-five").Board({repl:false})
         math:require("mathjs"),
         aes:require('aes-js'),
-        cryptojs:require('crypto-js')
+        cryptojs:require('crypto-js'),
+        crypto:require('crypto')
     },
 
     // The following property can be used to order the categories in the editor
