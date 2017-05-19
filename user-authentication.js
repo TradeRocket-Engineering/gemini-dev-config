@@ -1,3 +1,12 @@
+// please change the following three parameters according to the environment related to 
+// this instance of program-editor
+// this is the base url for oauth server this instance of program-editor will authenticate/authorize with
+var auth_base_url = "http://10.0.0.7:9080/tr";
+// this is the client id for this instance to authenticate with oauth server
+var clientId = 'trclient';
+// this is the corresponding password for the above client id
+var clientPwd = 'trclientpassword';
+
 var when = require("when");
 var util = require("util");
 var request = require('request');
@@ -33,11 +42,11 @@ module.exports = {
             var json = {};
             util.log("step1");
             request({
-                url: 'http://localhost:9080/tr/oauth/token',
+                url: auth_base_url + '/oauth/token',
                 method: 'POST',
                 auth: {
-                    user: 'trclient',
-                    pass: 'trclientpassword'
+                    user: clientId,
+                    pass: clientPwd
                 },
                 form: {
                     username: username,
@@ -52,16 +61,16 @@ module.exports = {
                     return;
                 }
                 json = JSON.parse(res.body);
-                util.log(json);
+                //util.log(json);
                 if (json.length == 0 || !json.access_token) {
                     util.log(username + " is not authenticated");
                     resolve(null);
                 }
                 else if (json.access_token) {
                     var access_token = json.access_token;
-                    util.log(json.access_token);
+                    //util.log(json.access_token);
                     request({
-                        url: 'http://localhost:9080/tr/user',
+                        url: auth_base_url + '/user',
                         auth: {
                             'bearer': json.access_token
                         }
