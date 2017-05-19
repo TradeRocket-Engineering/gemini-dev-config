@@ -108,6 +108,8 @@ if (parsedArgs.settings) {
     }
 }
 
+console.dir(settingsFile);
+
 try {
     var settings = require(settingsFile);
     settings.settingsFile = settingsFile;
