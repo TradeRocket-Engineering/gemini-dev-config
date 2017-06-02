@@ -79,6 +79,7 @@ var bearerStrategy = function (accessToken, done) {
                         settings.username = json.userAuthentication.name;
                         settings.functionGlobalContext.useremail = json.userAuthentication.name;
                         settings.functionGlobalContext.username = json.userAuthentication.name;
+                        settings.functionGlobalContext.authorities = json.authorities;
                         //console.dir(settings);
                         var tmp = {};
                         if (allowEdit == true) {                                
