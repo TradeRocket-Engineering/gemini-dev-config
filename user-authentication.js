@@ -1,7 +1,7 @@
 // please change the following three parameters according to the environment related to 
 // this instance of program-editor
 // this is the base url for oauth server this instance of program-editor will authenticate/authorize with
-var auth_base_url = "http://10.0.0.7:9080/tr";
+var auth_base_url = "http://localhost:9080/tr";
 // this is the client id for this instance to authenticate with oauth server
 var clientId = 'trclient';
 // this is the corresponding password for the above client id

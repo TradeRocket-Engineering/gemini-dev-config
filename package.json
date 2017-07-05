@@ -78,7 +78,7 @@
     "node-red-contrib-bigcsv": "1.2.0",
     "node-red-contrib-http-multipart": "0.2.0",
     "node-red-contrib-mapper": "0.0.1",
-    "node-red-contrib-securedhttp": "1.0.4",
+    "node-red-contrib-securedhttp": "1.0.5",
     "node-red-contrib-sqldbs": "1.1.8",
     "node-red-dashboard": "2.3.5",
     "node-red-node-aws": "0.1.1",
@@ -86,7 +86,8 @@
     "node-red-node-email": "0.1.*",
     "node-red-node-mongodb": "0.0.13",
     "node-red-node-twitter": "0.1.*",
-    "node-red-node-rbe": "0.1.*"
+    "node-red-node-rbe": "0.1.*",
+    "node-red-contrib-csvtojson": "^0.0.2"
   },
   "optionalDependencies": {
     "bcrypt": "~1.0.1"
