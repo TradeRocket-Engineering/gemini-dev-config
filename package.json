@@ -1,6 +1,6 @@
 {
   "name": "program-editor",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "TradeRocket Program Editor based on node-red version 0.16.3",
   "homepage": "http://traderocket.net",
   "license": "Apache-2.0",
