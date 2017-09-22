@@ -187,7 +187,9 @@ module.exports = {
         math:require("mathjs"),
         aes:require('aes-js'),
         cryptojs:require('crypto-js'),
-        crypto:require('crypto')
+        crypto:require('crypto'),
+        MongoClient:require('mongodb').MongoClient,
+        exec:require('child_process').exec
     },
 
     // The following property can be used to order the categories in the editor
