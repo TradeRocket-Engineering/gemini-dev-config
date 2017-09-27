@@ -189,7 +189,11 @@ module.exports = {
         cryptojs:require('crypto-js'),
         crypto:require('crypto'),
         MongoClient:require('mongodb').MongoClient,
-        exec:require('child_process').exec
+        exec:require('child_process').exec,
+        fs:require('fs'),
+        aws:require('aws-sdk'),
+        csv:require('csvtojson'),
+        S3BlockReadStream:require('s3-block-read-stream')
     },
 
     // The following property can be used to order the categories in the editor
