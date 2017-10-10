@@ -193,7 +193,8 @@ module.exports = {
         fs:require('fs'),
         aws:require('aws-sdk'),
         csv:require('csvtojson'),
-        S3BlockReadStream:require('s3-block-read-stream')
+        S3BlockReadStream:require('s3-block-read-stream'),
+        objectid:require('objectid')
     },
 
     // The following property can be used to order the categories in the editor
